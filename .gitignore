@@ -1,0 +1,4 @@
+node_modules
+.nvmrc
+coverage/
+.DS_Store

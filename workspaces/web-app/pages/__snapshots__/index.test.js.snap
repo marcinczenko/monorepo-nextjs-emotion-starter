@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index has proper styling 1`] = `
+.emotion-0 {
+  font-size: 20px;
+  color: #ff80c3;
+}
+
+<div>
+  <h1
+    class="emotion-0 emotion-1"
+    color="#ff80c3"
+  >
+    Welcome to next.js!
+  </h1>
+</div>
+`;
