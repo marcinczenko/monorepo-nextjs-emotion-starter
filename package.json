@@ -25,7 +25,7 @@
     "test:watch": "yarn jest --watch --colors",
     "lint": "yarn standard",
     "lint:fix": "yarn standard --fix --verbose",
-    "build": "yarn lerna run build --scope @react-frontend-developer/**"
+    "build": "yarn lerna run build"
   },
   "standard": {
     "parser": "babel-eslint",
