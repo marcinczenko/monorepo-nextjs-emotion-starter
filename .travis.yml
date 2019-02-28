@@ -2,6 +2,13 @@ language: node_js
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.13.0
   - export PATH="$HOME/.yarn/bin:$PATH"
+addons:
+  sonarcloud:
+    organization: "marcinczenko-github"
+    token:
+      secure: "iPnPsblHQJhsd7YKuWYNVm2nVV6nY8oucWOLXA/+RUmHu5LsVmtEHEJph4z0li163NtEzAIs7JwT3uZXvqot15JloekXXQTa17Os0MOm2amvZf9qO/zX6fq239iVeWzzUF6iQGrP7haRgiQQBJCp7I7mSYi1ORpeRN44HIhedX4DVJAcVAJQ0du897oXcLm40YRV6AZWIPxw/inTis+67U5qBAiPIrnSCyBJD4M3Ao5u3ah/yPZy/V6kmdOZs9w6LPelNllKIn7/AJe8w8rNSqwTD5zVxhAyA6MCcuxVEArOzWmPYOJ5nd83JbTNbRo7OuZ+DBRyNm7u6WE/FrcTpHPkkil5DvIILbfMSKBGY/JygW4kJQ2vBlXnrCEE39rxKgCcGagZcsXrkA8Rh8vnuIZ3TlkPgJFBdhh0iJ7qHoC0tb+W6VqcbCjVZGZxxzHwS7w3pmAWo7AKG7NBoc1cmV+5RA8n1Yq9+B+vREjI7wxMAlEjt8Jm/NT8OQBimYXaY8fJYHcEvrwEKOyVjPCF9n9l8NRGjpQuHEz3NDWKNBn4jV93ZHfnhXdYfKpKYON9oyFO1LxG9eV+VfnFZZnindDS8Wx0g/Jun5G51ZvpZ+M4aOajdWhukk4YCCYfahE88RnZOJkIASRCI9iFFHqTZ4G2VC1XcVridH+s6Hjbz+E="
+after_success:
+  - sonar-scanner
 cache:
   directories:
     - "node_modules"
