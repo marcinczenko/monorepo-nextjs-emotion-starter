@@ -6,13 +6,13 @@
   "author": "Marcin Czenko",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-emotion": "^10.0.1",
-    "@emotion/core": "^10.0.1",
-    "@emotion/styled": "^10.0.1",
-    "next": "^7.0.2",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1"
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "babel-plugin-emotion": "^10.0.7",
+    "next": "^8.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   },
   "scripts": {
     "dev": "next",
@@ -20,9 +20,9 @@
     "start": "next start"
   },
   "devDependencies": {
-    "jest-dom": "^2.1.1",
-    "jest-emotion": "^10.0.1",
-    "react-test-renderer": "^16.6.1",
-    "react-testing-library": "^5.2.3"
+    "jest-dom": "^3.1.2",
+    "jest-emotion": "^10.0.7",
+    "react-test-renderer": "^16.8.3",
+    "react-testing-library": "^6.0.0"
   }
 }
