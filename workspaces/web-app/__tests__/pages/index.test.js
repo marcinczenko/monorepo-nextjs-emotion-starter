@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-testing-library'
-import Home from './index'
+import Home from '../../pages/index'
 
 describe('index', () => {
   it('has proper styling', () => {
@@ -10,6 +10,6 @@ describe('index', () => {
 
   it('displays welcome text', () => {
     const { getByText } = render(<Home />)
-    expect(getByText(/welcome to next.js/i)).toBeInTheDocument()
+    expect(getByText(/welcome/i)).toBeInTheDocument()
   })
 })
