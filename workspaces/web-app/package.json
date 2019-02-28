@@ -8,7 +8,6 @@
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "babel-plugin-emotion": "^10.0.7",
     "next": "^8.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
@@ -20,9 +19,14 @@
     "start": "next start"
   },
   "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.7",
+    "@zeit/next-css": "^1.0.1",
+    "file-loader": "^3.0.1",
     "jest-dom": "^3.1.2",
     "jest-emotion": "^10.0.7",
     "react-test-renderer": "^16.8.3",
-    "react-testing-library": "^6.0.0"
+    "react-testing-library": "^6.0.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6"
   }
 }
