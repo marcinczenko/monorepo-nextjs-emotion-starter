@@ -8,6 +8,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'pages/*.js',
+    'components/**',
     '!pages/_app.js',
     '!**/jest.config.js',
     '!**/_document.js',

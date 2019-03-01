@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-testing-library'
+import { render, fireEvent } from 'react-testing-library'
 import { Welcome } from '../../../components/welcome'
 
 describe('Welcome', () => {
@@ -11,5 +11,26 @@ describe('Welcome', () => {
   it('displays welcome text', () => {
     const { getByText } = render(<Welcome />)
     expect(getByText(/welcome/i)).toBeInTheDocument()
+  })
+
+  it('show the thumbs up outline icon when button is pressed', () => {
+    const { container, getByText } = render(<Welcome />)
+
+    const button = getByText(/click me/i)
+
+    fireEvent.click(button)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('show the thumbs up icon again when button is pressed second time', () => {
+    const { container, getByText } = render(<Welcome />)
+
+    const button = getByText(/click me/i)
+
+    fireEvent.click(button)
+    fireEvent.click(button)
+
+    expect(container).toMatchSnapshot()
   })
 })
