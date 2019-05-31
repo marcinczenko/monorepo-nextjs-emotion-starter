@@ -18,4 +18,4 @@ Take advantage of `now dev` to run a development server and have a mirror of you
 [nextjs]: https://nextjs.org
 [emotion]: https://emotion.sh
 [@testing-library/react]: https://blog.kentcdodds.com/introducing-the-react-testing-library-e3a274307e65
-[react-frontend-developer]: https://react-frontend-developer.club
+[react-frontend-developer]: https://react-frontend-developer.now.sh
