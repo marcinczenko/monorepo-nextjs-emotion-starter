@@ -5,7 +5,7 @@ A starter project for a monorepo with a [nextjs]-based workspace that uses [emot
 This repository was created to capture a monorepo setup that:
 
 - has a workspace having nextjs-based frontend,
-- has ready-to-use, top-level testing setup based on jest and [react-testing-library]
+- has ready-to-use, top-level testing setup based on jest and [@testing-library/react]
 
 Successive commits add more features and examples.
 
@@ -13,5 +13,5 @@ Successive commits add more features and examples.
 
 [nextjs]: https://nextjs.org
 [emotion]: https://emotion.sh
-[react-testing-library]: https://blog.kentcdodds.com/introducing-the-react-testing-library-e3a274307e65
+[@testing-library/react]: https://blog.kentcdodds.com/introducing-the-react-testing-library-e3a274307e65
 [react-frontend-developer]: https://react-frontend-developer.club
